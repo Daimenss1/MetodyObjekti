@@ -2,7 +2,7 @@ package ru.skypro;
 
 public class Main {
     public static void main (String [] args) {
-        System.out.println(" Authors ");
+        System.out.println(" Authors: ");
         Author Tolstoy = new Author(" Lev ", " Tolstoy ");
         Author Tolstoy2 = new Author(" Lev ", " Tolstoy ");
         Author Block = new Author(" Alexandr ", " Block ");
