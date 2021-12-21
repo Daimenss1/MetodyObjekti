@@ -10,24 +10,22 @@ public class Author {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public String getFirstName () {
-        return this.firstName;
+    public String getFirstName () {return this.firstName;
     }
-    public String getLastName () {
-        return this.lastName;
+    public String getLastName () {return this.lastName;
     }
 
     @Override
     public String toString () {
-        return " Author " + " firstName = '" + firstName + '\'' + ", lastName = `" + lastName + '\'' + '}';
+        return " Author " + " firstName = '" + firstName + '\'' + ",lastName = `" + lastName + '\'' + '}';
     }
 
     @Override
     public boolean equals (Object o) {
-        if (this==o) return true;
-        if ( o == null || getClass() != o.getClass()) return false;
-        Author author = (Author) o;
-        return Objects.equals( firstName, author.firstName) && Objects.equals( lastName, author.lastName);
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author)o;
+        return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }
 
     @Override
